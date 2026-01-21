@@ -6,6 +6,12 @@
 - 🌱 I’m currently learning **cloud dev**
 
 - 💬 Ask me about **GIS, GEE, Remote Sensing**
+  
+<h3 align="left">
+  Check out my 
+  <a href="https://sites.google.com/view/hotimskiportfolio/" target="_blank" rel="noreferrer">GIS portfolio ↗</a>
+</h3>
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
