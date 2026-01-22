@@ -1,7 +1,6 @@
 # 🌿 AL HOTIMSKI
 
 **`Groovy Environmental Data Scientist / Avid Urbanist / Watercolor Enthusiast`**
-<strong><span class="rainbow">Groovy Environmental Data Scientist / Avid Urbanist / Watercolor Enthusiast</span></strong>
 
 Passionate geospatial data scientist specializing in remote sensing, geodatabases, and quantitative modeling. 
 Let's connect, discuss projects, and collaborate for a sustainable future! 
@@ -12,7 +11,7 @@ Let's connect, discuss projects, and collaborate for a sustainable future!
 
 ---
 
-<h3 align="left"> Read <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer">  About Me and Past Projects ↗</a> </h3>
+<!--<h3 align="left"> Read <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer">  About Me and Past Projects ↗</a> </h3>-->
 <h3 align="left"> Check out my <a href="https://sites.google.com/view/hotimskiportfolio/" target="_blank" rel="noreferrer"> GIS Portfolio ↗</a> </h3>
 <h3 align="left"> Let's connect on <a href="https://www.linkedin.com/in/al-hotimski/" target="_blank"> LinkedIn ↗ </a> </h3>
 
@@ -40,4 +39,4 @@ Let's connect, discuss projects, and collaborate for a sustainable future!
 
 ---
 
-<!-- to do: add stats, add projects>
+<!-- to do: add stats, add projects, color grad. >
