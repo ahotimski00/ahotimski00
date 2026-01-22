@@ -8,12 +8,12 @@
 - 💬 Ask me about **GIS, GEE, Remote Sensing**
 
 <h3 align="left">
-  Read about my 
-  <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer"> past projects ↗</a>
+  Read
+  <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer">  About Me and Past Projects ↗</a>
 </h3>
 <h3 align="left">
   Check out my 
-  <a href="https://sites.google.com/view/hotimskiportfolio/" target="_blank" rel="noreferrer"> GIS portfolio ↗</a>
+  <a href="https://sites.google.com/view/hotimskiportfolio/" target="_blank" rel="noreferrer"> GIS Portfolio ↗</a>
 </h3>
 
 <h3 align="left">Connect with me on
