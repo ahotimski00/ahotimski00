@@ -1,6 +1,6 @@
 # 🌿 AL HOTIMSKI
 
-**`Groovy Environmental Data Scientist / Avid Urbanist / Watercolor Enthusiast`**
+**`Groovy Environmental Data Scientist / Avid Urbanist / Watercolor Enthusiast`** 
 
 Passionate geospatial data scientist specializing in remote sensing, geodatabases, and quantitative modeling. 
 Let's connect, discuss projects, and collaborate for a sustainable future! 
