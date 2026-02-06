@@ -36,6 +36,4 @@ Let's connect, discuss projects, and collaborate for a sustainable future!
 <br />
 
 #
-
-
 <!-- to do: add stats, add projects, color grad. >
