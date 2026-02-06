@@ -8,7 +8,7 @@ Let's connect, discuss projects, and collaborate for a sustainable future!
 - 🔭 I’m currently working on **geospatial data packages**
 - 🌱 I’m currently learning **cloud dev**
 - 💬 Ask me about **GIS, GEE, Remote Sensing**
-
+ 
 ---
 
 <!--<h3 align="left"> Read <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer">  About Me and Past Projects ↗</a> </h3>-->
