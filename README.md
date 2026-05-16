@@ -17,6 +17,7 @@ Let's connect, discuss projects, and collaborate for a sustainable future!
 
 ---
 
+<!--
 ### ⚙️ Languages, Tools, Software
 
 <img align="left" alt="Python" width="40px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
@@ -34,26 +35,8 @@ Let's connect, discuss projects, and collaborate for a sustainable future!
 <img align="left" alt="ESRI ArcGIS Pro" width="40px" style="padding-right:10px;" src="https://cdn.simpleicons.org/arcgis"/>
 <img align="left" alt="QGIS" width="40px" style="padding-right:10px;" src="https://cdn.simpleicons.org/qgis"/>
 <br />
+-->
 
-#
+<!-- to do: add stats, add projects, color grad. -->
 
-
-### ⚙️ test
-                     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀█                     
-█▀▀▀▀▀█▀▀▀▀▀█▀▀▀▀▀█  █     ▄  ▄     █  █▀▀▀▀▀█▀▀▀▀▀█▀▀▀▀▀█
-█░░░░░█░░░░░█░░░░░█  █    ██▄▄██    █  █░░░░░█░░░░░█░░░░░█
-█▄▄▄▄▄█▄▄▄▄▄█▄▄▄▄▄█▄▄█   ██ ██ ██   █▄▄█▄▄▄▄▄█▄▄▄▄▄█▄▄▄▄▄█
-█▀▀▀▀▀█▀▀▀▀▀█▀▀▀▀▀█▀▀█   ████████   █▀▀█▀▀▀▀▀█▀▀▀▀▀█▀▀▀▀▀█
-█░░░░░█░░░░░█░░░░░█  █   ▄ ████     █  █░░░░░█░░░░░█░░░░░█
-█▄▄▄▄▄█▄▄▄▄▄█▄▄▄▄▄█  █   ▐▄████     █  █▄▄▄▄▄█▄▄▄▄▄█▄▄▄▄▄█
-                     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄█                     
-                          ▄████▄                          
-                         ▀▀▀▀▀▀▀▀                         
-                          ▀▄▄▄▄▀                          
-                                                          
-                        ▀▀▄▄▄▄▄▄▀▀                        
-                                                          
-                      ▀▀▀▄▄▄▄▄▄▄▄▀▀▀ 
-                      
-<!-- to do: add stats, add projects, color grad. >
-
+<img src="ascii.gif" alt="ascii art" />
