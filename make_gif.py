@@ -42,10 +42,10 @@ frame2 = """\
                   """
 
 FONT_PATH = "/System/Library/Fonts/SFNSMono.ttf"
-FONT_SIZE = 4    # small enough that the full QR art fits above the ground strip
+FONT_SIZE = 5    # small enough that the full QR art fits above the ground strip
 BG = (13, 17, 23)
 FG = (201, 209, 217)
-PAD = 3
+PAD = 3 
 PANEL_H = 106   # fixed ribbon height — keeps total GIF height stable
 GAP = 1000
 DURATION_MS = round(1000 / 24)
@@ -247,7 +247,7 @@ for i in range(4):
     ribbon_b.paste(p2, (i * panel_step, 0))
 
 n_frames   = round(cycle_w / (SCROLL_SPEED * DURATION_MS / 1000))
-viewport_w = 500
+viewport_w = 1000
 
 # Static star field — RGBA overlay, composited over the sky area each frame
 sky_h      = PANEL_H - GROUND_H
