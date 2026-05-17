@@ -69,8 +69,14 @@ LAKE_HI     = (65, 120, 175)
 BOAT_COLOR  = (190, 30, 30)
 SAIL_COLOR  = (220, 45, 45)
 SAIL_COLOR2 = (240, 200, 180)
-DUCK_COLOR  = (230, 220, 185)
-DEER_COLOR  = (110, 65, 22)
+DUCK_COLOR     = (230, 220, 185)
+DEER_COLOR     = (185, 125, 60)
+DEER_SPOT      = (230, 210, 170)
+MUSH_CAP       = (185, 50, 20)
+MUSH_STEM      = (215, 205, 185)
+MUSH_SPOT      = (245, 238, 220)
+FLOWER_STEM    = (75, 155, 55)
+FLOWER_COLORS  = [(220, 75, 115), (235, 195, 55), (160, 95, 215), (255, 135, 35)]
 
 font  = ImageFont.truetype(FONT_PATH, FONT_SIZE)
 _bbox = font.getbbox("W")
@@ -106,6 +112,9 @@ def draw_deer(draw, cx, ground_y):
     bt = ground_y - 14   # body top
     bb = ground_y - 8    # body bottom
     draw.ellipse([(cx - 8, bt), (cx + 8, bb)], fill=dc)
+    mid_y = (bt + bb) // 2
+    for sx, sy in [(cx - 3, mid_y - 1), (cx + 1, mid_y - 2), (cx + 4, mid_y), (cx - 1, mid_y + 1)]:
+        draw.ellipse([(sx - 1, sy - 1), (sx + 1, sy + 1)], fill=DEER_SPOT)
     for lx in [cx - 5, cx - 2, cx + 2, cx + 5]:
         draw.line([(lx, bb), (lx, ground_y - 1)], fill=dc, width=1)
     draw.line([(cx + 6, bt + 1), (cx + 10, bt - 4)], fill=dc, width=2)
@@ -117,6 +126,40 @@ def draw_deer(draw, cx, ground_y):
     draw.line([(ax + 1, ay), (ax + 3, ay - 4)], fill=dc, width=1)
     draw.line([(ax + 3, ay - 4), (ax + 2, ay - 7)], fill=dc, width=1)
     draw.line([(ax + 3, ay - 4), (ax + 5, ay - 6)], fill=dc, width=1)
+
+
+def draw_mushroom(draw, x, y, scale=1.0, style=0):
+    r = lambda v: max(1, round(v * scale))
+    if style == 0:
+        # Amanita: round dome cap with spots
+        draw.rectangle([(x - r(1), y - r(3)), (x + r(1), y)], fill=MUSH_STEM)
+        draw.ellipse([(x - r(4), y - r(9)), (x + r(4), y - r(2))], fill=MUSH_CAP)
+        draw.ellipse([(x - r(2), y - r(8)), (x - r(1), y - r(7))], fill=MUSH_SPOT)
+        draw.ellipse([(x + r(1), y - r(7)), (x + r(2), y - r(6))], fill=MUSH_SPOT)
+    else:
+        # Portobello: wide flat cap, taller thin stem, gill hints underneath
+        draw.rectangle([(x - r(1), y - r(5)), (x + r(1), y)], fill=MUSH_STEM)
+        draw.ellipse([(x - r(6), y - r(7)), (x + r(6), y - r(4))], fill=(148, 92, 40))
+        for gx in [x - r(3), x, x + r(3)]:
+            draw.line([(gx, y - r(4)), (gx, y - r(3))], fill=(105, 65, 25), width=1)
+
+
+def draw_flower(draw, x, y, color, scale=1.0, style=0):
+    r = lambda v: max(1, round(v * scale))
+    draw.line([(x, y), (x, y - r(6))], fill=FLOWER_STEM, width=1)
+    cx, cy = x, y - r(6) - r(2)
+    pr = r(1)
+    if style == 0:
+        # Cross petals (N/S/E/W)
+        for dx, dy in [(0, -r(2)), (0, r(2)), (-r(2), 0), (r(2), 0)]:
+            draw.ellipse([(cx + dx - pr, cy + dy - pr), (cx + dx + pr, cy + dy + pr)], fill=color)
+        draw.ellipse([(cx - pr, cy - pr), (cx + pr, cy + pr)], fill=(255, 245, 190))
+    else:
+        # Daisy: diagonal petals (NE/NW/SE/SW) — visually distinct from cross
+        d = r(2)
+        for dx, dy in [(d, -d), (-d, -d), (d, d), (-d, d)]:
+            draw.ellipse([(cx + dx - pr, cy + dy - pr), (cx + dx + pr, cy + dy + pr)], fill=color)
+        draw.ellipse([(cx - pr, cy - pr), (cx + pr, cy + pr)], fill=(255, 225, 70))
 
 
 def make_ground(width, frame_idx=0):
@@ -157,7 +200,7 @@ def make_ground(width, frame_idx=0):
                 draw.polygon([(sx_l, snow_y), (px, py), (sx_r, snow_y)], fill=SNOW_COLOR)
 
     # Lake
-    lk_x1, lk_x2 = width // 3 + 60, width // 3 + 260
+    lk_x1, lk_x2 = width // 3 - 20, width // 3 + 270
     draw.rectangle([(lk_x1, ground_y), (lk_x2, GROUND_H)], fill=LAKE_COLOR)
     for j in range(3):
         yo = ground_y + 2 + j * 4
@@ -212,6 +255,21 @@ def make_ground(width, frame_idx=0):
                 color   = TREE_COLOR if layer % 2 == 0 else TREE_DARK
                 draw.polygon([(cx - lw//2, ly_base), (cx, ly_tip), (cx + lw//2, ly_base)], fill=color)
         x += rng2.randint(1, 5)
+
+    # Mushrooms and flowers scattered across the grass/tree strip
+    rng_flora = random.Random(55)
+    fx = -4
+    while fx < width + 4:
+        if not (lk_x1 - 8 < fx < lk_x2 + 8):
+            kind  = rng_flora.randint(0, 5)
+            scale = 0.6 + rng_flora.random() * 1.0
+            style = rng_flora.randint(0, 1)
+            if kind == 0:
+                draw_mushroom(draw, fx, ground_y, scale=scale * 0.55, style=style)
+            elif kind <= 2:
+                fc = FLOWER_COLORS[rng_flora.randint(0, len(FLOWER_COLORS) - 1)]
+                draw_flower(draw, fx, ground_y, fc, scale=scale, style=style)
+        fx += rng_flora.randint(10, 20)
 
     # Deer drawn last so it appears in front of all trees
     deer_cx = lk_x1 - 70
