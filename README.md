@@ -6,7 +6,7 @@ Passionate geospatial data scientist specializing in remote sensing, geodatabase
 Let's connect, discuss projects, and collaborate for a sustainable future! 
 
 - 🔭 I’m currently working on **geospatial data packages**
-- 🌱 I’m currently learning **cloud dev**  
+<!--- 🌱 I’m currently learning **cloud dev**  <!-->
 - 💬 Ask me about **GIS, GEE, Remote Sensing**
  
 ---
