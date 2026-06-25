@@ -2,18 +2,16 @@
 
 **`Environmental Data Scientist / Avid Urbanist / Watercolor Enthusiast`** 
 
-Passionate geospatial data scientist specializing in remote sensing, geodatabases, and quantitative modeling. 
-Let's connect, discuss projects, and collaborate for a sustainable future! 
+Geospatial Data Scientist at The Conservation Fund. Remote sensing, ownership records, and the pipelines that connect them.
 
-- 🔭 I’m currently working on **geospatial data packages**
-<!--- 🌱 I’m currently learning **cloud dev**  <!-->
+- 🔭 I'm currently working on [**cogsieve**](https://github.com/ahotimski00/cogsieve), a Python library for filtering polygons by fractional coverage of remote categorical rasters
+<!--- 🌱 I'm currently learning **cloud dev**  -->
 - 💬 Ask me about **GIS, GEE, Remote Sensing**
- 
+
 ---
 
-<!--<h3 align="left"> Read <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer">  About Me and Past Projects ↗</a> </h3>-->
-<h3 align="left"> Check out my <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer"> Portfolio ↗</a> </h3>
-<h3 align="left"> Let's connect on <a href="https://www.linkedin.com/in/al-hotimski/" target="_blank"> LinkedIn ↗ </a> </h3>
+<h3 align="left"> Portfolio: <a href="https://ahotimski00.github.io" target="_blank" rel="noreferrer">ahotimski00.github.io ↗</a> </h3>
+<h3 align="left"> LinkedIn: <a href="https://www.linkedin.com/in/al-hotimski/" target="_blank">al-hotimski ↗</a> </h3>
 
 ---
 
